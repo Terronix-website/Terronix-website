@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" style=""><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terronix Infra and Facilities Pvt Ltd - Premium Brochure</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        line-height: 1.6;
+        color: #2d3748;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        margin: 0;
+        padding: 0;
+        max-width: none;
+      }
+
+      .hero-section {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+        opacity: 0.3;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .company-name {
+        font-size: 4rem;
+        font-weight: 900;
+        margin-bottom: 20px;
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(45deg, #ffffff, #ffd700);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .tagline {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 40px;
+        opacity: 0.9;
+      }
+
+      .hero-stats {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        margin-top: 60px;
+      }
+
+      .stat-item {
+        text-align: center;
+      }
+
+      .stat-number {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #ffd700;
+        display: block;
+      }
+
+      .stat-label {
+        font-size: 1rem;
+        opacity: 0.8;
+        margin-top: 5px;
+      }
+
+      .section {
+        padding: 80px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .section-title {
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 60px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .about-section {
+        background: white;
+        border-radius: 0;
+      }
+
+      .about-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+
+      .about-text {
+        font-size: 1.2rem;
+        line-height: 1.8;
+      }
+
+      .about-highlights {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .highlight-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        background: linear-gradient(135deg, #f8faff, #e6f3ff);
+        border-radius: 15px;
+        border-left: 4px solid #667eea;
+      }
+
+      .highlight-icon {
+        font-size: 2rem;
+        color: #667eea;
+        width: 60px;
+        text-align: center;
+      }
+
+      .services-section {
+        background: linear-gradient(135deg, #f8faff 0%, #e6f3ff 100%);
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 40px;
+      }
+
+      .service-card {
+        background: white;
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e2e8f0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .service-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 6px;
+        background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+      }
+
+      .service-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        gap: 20px;
+      }
+
+      .service-icon {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        width: 70px;
+        height: 70px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+      }
+
+      .service-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #2d3748;
+        flex: 1;
+      }
+
+      .service-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        list-style: none;
+      }
+
+      .service-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 0;
+        border-bottom: 1px solid #f1f5f9;
+      }
+
+      .service-item i {
+        color: #667eea;
+        font-size: 1.1rem;
+        width: 20px;
+      }
+
+      .why-choose-section {
+        background: white;
+      }
+
+      .why-choose-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 40px;
+      }
+
+      .why-card {
+        background: linear-gradient(135deg, #ffffff, #f8faff);
+        padding: 40px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 15px 30px rgba(102, 126, 234, 0.1);
+        border: 1px solid #e6f3ff;
+      }
+
+      .why-icon {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        margin: 0 auto 25px;
+      }
+
+      .why-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #2d3748;
+      }
+
+      .industries-section {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+      }
+
+      .industries-section .section-title {
+        color: white;
+        -webkit-text-fill-color: white;
+      }
+
+      .industries-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+      }
+
+      .industry-card {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 30px 20px;
+        border-radius: 15px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .industry-icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: #ffd700;
+      }
+
+      .industry-name {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      .contact-section {
+        background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+        color: white;
+        text-align: center;
+      }
+
+      .contact-section .section-title {
+        color: white;
+        -webkit-text-fill-color: white;
+      }
+
+      .contact-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        font-size: 1.1rem;
+      }
+
+      .contact-item i {
+        color: #ffd700;
+        font-size: 1.5rem;
+      }
+
+      .cta-button {
+        display: inline-block;
+        background: linear-gradient(135deg, #ffd700, #ffed4e);
+        color: #2d3748;
+        padding: 20px 50px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-decoration: none;
+        box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
+      }
+
+      @media (max-width: 768px) {
+        .company-name {
+          font-size: 2.5rem;
+        }
+
+        .hero-stats {
+          flex-direction: column;
+          gap: 30px;
+        }
+
+        .about-content {
+          grid-template-columns: 1fr;
+        }
+
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .service-list {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body style="">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1 class="company-name">TERRONIX</h1>
+        <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 10px">INFRA AND FACILITIES PVT LTD</h2>
+        <p class="tagline"><span style="color: rgb(242, 242, 242);">Fresh Company. Veteran Experts. World-Class</span><span style="color: rgb(77, 77, 77);"> </span><span style="color: rgb(242, 242, 242);">Solutions</span><span style="color: rgb(242, 242, 242);">.</span></p>
+        <p style="font-size: 1.1rem; font-weight: 400; opacity: 0.85; margin-top: -20px;">Powered by highly experienced industry professionals</p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number"><i class="fas fa-users-cog"></i></span>
+            <div class="stat-label">Experienced Team</div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100+</span>
+            <div class="stat-label">Comprehensive Services</div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <div class="stat-label">Expert Support</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section">
+      <h2 class="section-title">About Terronix</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            <strong>Terronix Infra and Facilities Pvt Ltd</strong> is a fresh, dynamic facility management company built on a foundation of <strong>combined expertise</strong>. While we're new as an organization, our strength lies in our <strong>team of seasoned professionals</strong> who bring proven track records from leading industry projects.
+          </p>
+          <p>
+            Our expert team includes certified engineers, technical specialists, and facility management veterans who have successfully executed projects across IT parks, industrial complexes, hospitals, and corporate facilities. We combine their <strong>deep industry knowledge</strong> with innovative approaches to deliver world-class solutions.
+          </p>
+          <p>
+            <strong>Our Promise:</strong> Fresh energy, experienced minds, and unwavering commitment to excellence. We're ready to be your trusted facility management partner from day one.
+          </p>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <i class="fas fa-users-cog highlight-icon"></i>
+            <div>
+              <strong>Veteran Experts</strong>
+              Highly experienced professionals
+            </div>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-certificate highlight-icon"></i>
+            <div>
+              <strong>Certified Professionals</strong><br>
+              Engineers, technicians &amp; facility specialists
+            </div>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-rocket highlight-icon"></i>
+            <div>
+              <strong>Fresh Approach</strong><br>
+              Innovation meets proven expertise
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Expert Team Section -->
+    <section class="section" style="background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%); color: white;">
+      <h2 class="section-title" style="color: white; -webkit-text-fill-color: white;">Our Competitive Advantage: The Expert Team</h2>
+      <div style="max-width: 900px; margin: 0 auto 60px; text-align: center; font-size: 1.2rem; line-height: 1.8;">
+        <p style="margin-bottom: 20px;">
+          <strong style="color: #ffd700; font-size: 1.4rem;">We may be a new company, but we're powered by industry veterans.</strong>
+        </p>
+        <p>
+          Our team comprises <strong>certified engineers, licensed technicians, and facility management specialists</strong> with extensive individual experience. They've successfully delivered projects for Fortune 500 companies, major hospitals, IT parks, and industrial facilities.
+        </p>
+      </div>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 50px;">
+        <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 15px; text-align: center; border: 2px solid rgba(255,215,0,0.3);">
+          <i class="fas fa-hard-hat" style="font-size: 3rem; color: #ffd700; margin-bottom: 20px;"></i>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #fff;">Certified Engineers</h3>
+          <p style="font-size: 1rem; opacity: 0.9;"><span style="color: rgb(242, 242, 242);">Specialists, electrical engineers, and water treatment experts with professional certifications and proven project success.</span></p>
+        </div>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 15px; text-align: center; border: 2px solid rgba(255,215,0,0.3);">
+          <i class="fas fa-tools" style="font-size: 3rem; color: #ffd700; margin-bottom: 20px;"></i>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #fff;">Technical Masters</h3>
+          <p style="font-size: 1rem; opacity: 0.9;"><span style="color: rgb(242, 242, 242);">HVAC specialists, STP/ETP operators, and maintenance technicians with hands-on expertise in complex facility systems</span>.</p>
+        </div>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 15px; text-align: center; border: 2px solid rgba(255,215,0,0.3);">
+          <i class="fas fa-user-tie" style="font-size: 3rem; color: #ffd700; margin-bottom: 20px;"></i>
+          <h3 style="font-size: 1.3rem; margin-bottom: 15px; color: #fff;">Seasoned Experts</h3>
+          <p style="font-size: 1rem; opacity: 0.9;"><p>
+  <span style="color: rgb(242, 242, 242);">Professionals with extensive experience in managing teams and ensuring smooth day-to-day
+  operations.</span>
+</p>
+</p>
+        </div>
+      </div>
+      
+      <div style="background: linear-gradient(135deg, rgba(255,215,0,0.15), rgba(255,215,0,0.05)); padding: 40px; border-radius: 20px; border-left: 5px solid #ffd700;">
+        <h3 style="font-size: 1.8rem; margin-bottom: 25px; color: #ffd700; text-align: center;">
+          <i class="fas fa-star"></i> What This Means for You <i class="fas fa-star"></i>
+        </h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
+          <div style="display: flex; gap: 15px; align-items: start;">
+            <i class="fas fa-check-circle" style="color: #ffd700; font-size: 1.5rem; margin-top: 5px;"></i>
+            <div>
+              <strong style="display: block; margin-bottom: 5px; font-size: 1.1rem;">No Learning Curve</strong>
+              <span style="opacity: 0.9;">Our experts hit the ground running from day one</span>
+            </div>
+          </div>
+          
+          <div style="display: flex; gap: 15px; align-items: start;">
+            <i class="fas fa-check-circle" style="color: #ffd700; font-size: 1.5rem; margin-top: 5px;"></i>
+            <div>
+              <strong style="display: block; margin-bottom: 5px; font-size: 1.1rem;">Proven Problem Solvers</strong>
+              <span style="opacity: 0.9;">They've handled complex challenges before</span>
+            </div>
+          </div>
+          
+          <div style="display: flex; gap: 15px; align-items: start;">
+            <i class="fas fa-check-circle" style="color: #ffd700; font-size: 1.5rem; margin-top: 5px;"></i>
+            <div>
+              <strong style="display: block; margin-bottom: 5px; font-size: 1.1rem;">Best Practices Built-In</strong>
+              <span style="opacity: 0.9;">Industry-leading processes from day one</span>
+            </div>
+          </div>
+          
+          <div style="display: flex; gap: 15px; align-items: start;">
+            <i class="fas fa-check-circle" style="color: #ffd700; font-size: 1.5rem; margin-top: 5px;"></i>
+            <div>
+              <strong style="display: block; margin-bottom: 5px; font-size: 1.1rem;">Quality Assured</strong>
+              <span style="opacity: 0.9;">Backed by years of successful project delivery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 50px; padding: 30px; background: rgba(255,215,0,0.1); border-radius: 15px;">
+        <p style="font-size: 1.3rem; margin-bottom: 15px;">
+          <i class="fas fa-quote-left" style="color: #ffd700; margin-right: 10px;"></i>
+          <strong><span style="color: rgb(204, 204, 204);">Fresh company doesn't mean inexperienced. It means established expertise with a new, client-focused approach.</span></strong>
+          <i class="fas fa-quote-right" style="color: #ffd700; margin-left: 10px;"></i>
+        </p>
+        <p style="font-size: 1.1rem; opacity: 0.9;">
+          <span style="color: rgb(242, 242, 242);">You get the reliability of seasoned professionals with the dedication and personal attention of a growing business.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services-section">
+      <h2 class="section-title">Our Premium Services</h2>
+      <div class="services-grid">
+        <!-- Hard Services -->
+        <div class="service-card">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3 class="service-title">Hard Services / Technical Engineering</h3>
+          </div>
+          <ul class="service-list">
+            <li class="service-item"><i class="fas fa-bolt"></i> Electrical Engineering &amp; Systems</li>
+            <li class="service-item"><i class="fas fa-fire"></i> Fire Protection Systems</li>
+            <li class="service-item"><i class="fas fa-video"></i> CCTV &amp; Security Systems</li>
+            <li class="service-item"><i class="fas fa-wind"></i> HVAC Services</li>
+            <li class="service-item"><i class="fas fa-wrench"></i> Plumbing &amp; Pipe Repairs</li>
+            <li class="service-item"><i class="fas fa-building"></i> Building Management &amp; AMC</li>
+            <li class="service-item"><i class="fas fa-hammer"></i> Construction &amp; MEP Services</li>
+            <li class="service-item"><i class="fas fa-tint"></i> Rain Water Harvesting Systems</li>
+          </ul>
+        </div>
+
+        <!-- Water Treatment -->
+        <div class="service-card">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-water"></i>
+            </div>
+            <h3 class="service-title">Water, Sewage &amp; Treatment Infrastructure</h3>
+          </div>
+          <ul class="service-list">
+            <li class="service-item"><i class="fas fa-cog"></i> STP/ETP/WTP Design &amp; Engineering</li>
+            <li class="service-item"><i class="fas fa-play-circle"></i> Installation &amp; Commissioning</li>
+            <li class="service-item"><i class="fas fa-tools"></i> Operation &amp; Maintenance (O&amp;M)</li>
+            <li class="service-item"><i class="fas fa-shield-alt"></i> AMC for Treatment Plants</li>
+            <li class="service-item"><i class="fas fa-recycle"></i> Wastewater Recycling</li>
+            <li class="service-item"><i class="fas fa-robot"></i> Water Treatment Automation</li>
+            <li class="service-item"><i class="fas fa-wind"></i> Odour Control &amp; Treatment</li>
+            <li class="service-item"><i class="fas fa-cloud-rain"></i> Rain Water Harvesting Projects</li>
+          </ul>
+        </div>
+
+        <!-- Soft Services -->
+        <div class="service-card">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-broom"></i>
+            </div>
+            <h3 class="service-title">Soft Services / Facility Upkeep &amp; Cleaning</h3>
+          </div>
+          <ul class="service-list">
+            <li class="service-item"><i class="fas fa-building"></i> Corporate Housekeeping</li>
+            <li class="service-item"><i class="fas fa-industry"></i> Industrial Housekeeping</li>
+            <li class="service-item"><i class="fas fa-robot"></i> Mechanized Housekeeping</li>
+            <li class="service-item"><i class="fas fa-spray-can"></i> Sanitization Services</li>
+            <li class="service-item"><i class="fas fa-car"></i> Car Park Canopy Washing</li>
+            <li class="service-item"><i class="fas fa-road"></i> Pavement &amp; Drain Cleaning</li>
+            <li class="service-item"><i class="fas fa-swimming-pool"></i> Swimming Pool Maintenance</li>
+            <li class="service-item"><i class="fas fa-trash"></i> Waste Management &amp; Recycling</li>
+          </ul>
+        </div>
+
+        <!-- Landscaping -->
+        <div class="service-card">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-tree"></i>
+            </div>
+            <h3 class="service-title">Landscaping &amp; Environmental Services</h3>
+          </div>
+          <ul class="service-list">
+            <li class="service-item"><i class="fas fa-seedling"></i> Landscape Management</li>
+            <li class="service-item"><i class="fas fa-leaf"></i> Garden Development</li>
+            <li class="service-item"><i class="fas fa-tree"></i> Tree &amp; Arborist Services</li>
+            <li class="service-item"><i class="fas fa-forest"></i> Green Belt Management</li>
+            <li class="service-item"><i class="fas fa-globe"></i> Environmental Consulting</li>
+            <li class="service-item"><i class="fas fa-cloud-rain"></i> Stormwater Integration</li>
+          </ul>
+        </div>
+
+        <!-- Manpower -->
+        <div class="service-card">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="service-title">Manpower Deployment &amp; Support</h3>
+          </div>
+          <ul class="service-list">
+            <li class="service-item"><i class="fas fa-user"></i> Housekeeping Staff</li>
+            <li class="service-item"><i class="fas fa-seedling"></i> Professional Gardeners</li>
+            <li class="service-item"><i class="fas fa-cog"></i> STP/ETP/WTP Operators</li>
+            <li class="service-item"><i class="fas fa-wrench"></i> M&amp;E Technicians</li>
+            <li class="service-item"><i class="fas fa-hard-hat"></i> Multi-skilled Technical Staff</li>
+            <li class="service-item"><i class="fas fa-user-tie"></i> Facility Supervisors</li>
+            <li class="service-item"><i class="fas fa-shield-alt"></i> Security Personnel</li>
+          </ul>
+        </div>
+
+        <!-- Integrated FM -->
+        <div class="service-card">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-sitemap"></i>
+            </div>
+            <h3 class="service-title">Integrated Facility Management (IFM)</h3>
+          </div>
+          <ul class="service-list">
+            <li class="service-item"><i class="fas fa-building"></i> Total Facility Management</li>
+            <li class="service-item"><i class="fas fa-layer-group"></i> Combined Hard + Soft Services</li>
+            <li class="service-item"><i class="fas fa-hospital"></i> Healthcare Facilities</li>
+            <li class="service-item"><i class="fas fa-laptop"></i> IT Parks &amp; Corporate</li>
+            <li class="service-item"><i class="fas fa-hotel"></i> Hotels &amp; Hospitality</li>
+            <li class="service-item"><i class="fas fa-home"></i> Residential Complexes</li>
+          </ul>
+        </div>
+
+        <!-- Specialty Services -->
+        <div class="service-card">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h3 class="service-title">Specialty Services</h3>
+          </div>
+          <ul class="service-list">
+            <li class="service-item"><i class="fas fa-utensils"></i> Restaurant Odour Treatment</li>
+            <li class="service-item"><i class="fas fa-building"></i> Façade Rope Access Cleaning</li>
+            <li class="service-item"><i class="fas fa-city"></i> High-rise Maintenance</li>
+            <li class="service-item"><i class="fas fa-phone-alt"></i> Emergency On-call Technical Support</li>
+            <li class="service-item"><i class="fas fa-flask"></i> Chemical &amp; Industrial Cleaning</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section why-choose-section">
+      <h2 class="section-title">Why Choose Terronix?</h2>
+      <div class="why-choose-grid">
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h3 class="why-title">Experienced Professionals</h3>
+          <p>
+            Our team brings of combined expertise from successful projects in leading facilities nationwide. Individual experts with proven track records.
+          </p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3 class="why-title">24/7 Support</h3>
+          <p>
+            Round-the-clock availability for emergency support and maintenance services to ensure business continuity.
+          </p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3 class="why-title">Sustainable Solutions</h3>
+          <p>Environmentally responsible practices including rain water harvesting and energy-efficient systems.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3 class="why-title">Super Knowledge Base</h3>
+          <p>Our specialists are industry veterans with deep technical knowledge, certifications, and hands-on experience across all facility management domains.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3 class="why-title">Cost Optimization</h3>
+          <p>Strategic approach to reduce operational costs while maintaining the highest service standards.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3 class="why-title">Fresh Perspective</h3>
+          <p>As a new company, we're agile, eager, and committed to exceeding expectations. No legacy issues, just modern solutions and dedicated service.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries Served -->
+    <section class="section industries-section">
+      <h2 class="section-title">Industries We Serve</h2>
+      <div class="industries-grid">
+        <div class="industry-card">
+          <i class="fas fa-laptop industry-icon"></i>
+          <div class="industry-name">IT Parks &amp; Corporate</div>
+        </div>
+        <div class="industry-card">
+          <i class="fas fa-industry industry-icon"></i>
+          <div class="industry-name">Manufacturing &amp; Industrial</div>
+        </div>
+        <div class="industry-card">
+          <i class="fas fa-hospital industry-icon"></i>
+          <div class="industry-name">Healthcare &amp; Hospitals</div>
+        </div>
+        <div class="industry-card">
+          <i class="fas fa-hotel industry-icon"></i>
+          <div class="industry-name">Hotels &amp; Hospitality</div>
+        </div>
+        <div class="industry-card">
+          <i class="fas fa-home industry-icon"></i>
+          <div class="industry-name">Residential Complexes</div>
+        </div>
+        <div class="industry-card">
+          <i class="fas fa-graduation-cap industry-icon"></i>
+          <div class="industry-name">Educational Institutions</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+91 8550011325</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a1c8cfc7cee1d5c4d3d3cecfc8d98fc8cf">[email&#160;protected]</a></span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span><p><span style="color: rgb(255, 255, 255);">Corporate Office: Kalaburagi | Operations in Bengaluru &amp; Across Karnataka</span></p></span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-globe"></i>
+          <span>www.terronix.in</span>
+        </div>
+      </div>
+      <a href="#" class="cta-button">Request A Quote Today</a>
+      <p style="margin-top: 40px; opacity: 0.8; font-size: 1.1rem"><br></p>
+    </section>
+  
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body></html>
